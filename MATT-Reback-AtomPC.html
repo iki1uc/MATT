@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MATT — reback — MATT ne Echo — reback zu atom.PC + ozean + OP</title>
+<meta http-equiv="refresh" content="15;url=https://iki1uc.github.io/atom.PC/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#07070a;color:#e8e8e8;font-family:ui-monospace,Menlo,monospace;min-height:100vh;display:flex;flex-direction:column}
+.top{padding:10px 16px;border-bottom:1px solid #222;background:#0f0f14;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.badge{background:#ffcc00;color:#000;padding:2px 8px;font-weight:900;font-size:11px}
+.badge2{background:#00d4ff;color:#000;padding:2px 8px;font-weight:900;font-size:11px}
+.stage{flex:1;position:relative;background:#000;display:grid;place-items:center;overflow:hidden;min-height:380px}
+.matt{position:absolute;inset:0;display:grid;place-items:center}
+.matt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s}
+.matt img.active{opacity:1}
+.bar{position:absolute;bottom:0;left:0;height:4px;background:#ffcc00;transition:width .1s linear;z-index:5}
+.count{position:absolute;top:12px;right:12px;background:#ffcc00;color:#000;padding:6px 12px;border-radius:999px;font-weight:900;font-size:12px;z-index:6}
+.card{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(18,18,26,.92);border:1px solid #333;border-radius:16px;padding:18px 22px;text-align:center;z-index:7;backdrop-filter:blur(8px)}
+.btn{background:#ffcc00;color:#000;border:0;padding:8px 12px;border-radius:10px;font-weight:900;cursor:pointer;margin-top:8px;font-size:11px}
+.btn.sec{background:#1a1a1a;color:#fff;border:1px solid #333}
+.wrap{max-width:1100px;margin:0 auto;padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}}
+.info{background:#12121a;border:1px solid #222;border-radius:14px;padding:14px}
+.info h2{font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.6;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="top">
+  <div><span class="badge">MATT</span> <span class="badge2">reback</span> <span style="font-size:11px;opacity:.7">MATT ne Echo — reback zu atom.PC — Ebene anders Nacht</span></div>
+  <div style="font-size:10px;opacity:.5">15s → atom.PC → ozean → OP → reback → atom.PC Loop</div>
+</div>
+
+<div class="stage" id="stage">
+  <div class="matt" id="matt"></div>
+  <div class="bar" id="bar" style="width:0%"></div>
+  <div class="count" id="count">15s → atom.PC reback</div>
+  <div class="card">
+    <div style="font-size:18px;font-weight:900">MATT — reback</div>
+    <div style="font-size:10px;opacity:.6;letter-spacing:2px;margin-top:2px">ne Echo — kein Echo — direkt — Loop</div>
+    <div style="font-size:11px;margin-top:10px;line-height:1.5">Bilder Blend + Ausblend<br>Zeiten wählt er selber<br>Schach + Wasser Ozean gewaschen<br><br><b>reback</b> = leitet zurück<br>nach <span id="sec">15</span>s → atom.PC<br>dann ozean → OP → wieder MATT</div>
+    <div style="display:flex;gap:6px;justify-content:center;margin-top:10px">
+      <button class="btn" onclick="go('https://iki1uc.github.io/atom.PC/')">→ atom.PC Schach</button>
+      <button class="btn sec" onclick="go('https://iki1uc.github.io/ozean/')">→ ozean</button>
+      <button class="btn sec" onclick="go('https://iki1uc.github.io/OP/')">→ OP</button>
+    </div>
+    <div style="font-size:9px;opacity:.5;margin-top:8px">Loop: atom.PC selber Schach — MATT ne Echo — ozean Wasser Ozean — OP Vulkan-Drache — reback — Ebene anders Nacht</div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="info">
+    <h2>MATT reback — was ist reback</h2>
+    <div style="font-size:11px;line-height:1.6">
+      <b>reback</b> = feedback / zurück — MATT leitet nicht nur zu OP, sondern reback zu atom.PC — Kreislauf Ebene anders Nacht<br><br>
+      <b>Loop:</b><br>
+      1. <b>atom.PC selber Schach</b> — 11-99 = Schach Figuren — Tag/Nacht Ebene anders — https://iki1uc.github.io/atom.PC/<br>
+      2. <b>MATT ne Echo</b> — Bilder Blend Zeiten selber — ohne Echo direkt — https://iki1uc.github.io/MATT/<br>
+      3. <b>ozean</b> — Wasser Ozean gewaschen zum Drachen — https://iki1uc.github.io/ozean/<br>
+      4. <b>OP</b> — Vulkan-Drache-Gpu-Move — https://iki1uc.github.io/OP/<br>
+      5. <b>reback</b> → wieder atom.PC — Loop — freeboote 64+64=128<br><br>
+      Jetzt MATT hat Meta Refresh 15s → atom.PC — nachts anders: atom.PC Schach Nacht Ebene = dunkel
+    </div>
+  </div>
+  <div class="info">
+    <h2>Für MATT Repo — index.html ersetzen</h2>
+    <div style="font-size:11px;line-height:1.6">
+      Repo: <b>iki1uc/MATT</b> — https://github.com/iki1uc/MATT/settings/pages<br><br>
+      Diese Datei als <b>index.html</b> in MATT Repo legen — dann https://iki1uc.github.io/MATT/ zeigt MATT reback mit Loop<br><br>
+      Vorher: MATT → OP nach 12s<br>
+      Jetzt besser: MATT reback → atom.PC nach 15s → ozean → OP → Loop — Ebene anders Nacht<br><br>
+      Drop schickes Bild hier unten → MATT ne Echo zeigt es ohne Echo
+    </div>
+    <div style="margin-top:10px;background:#000;border:1px solid #222;border-radius:10px;height:120px;display:grid;place-items:center;position:relative;overflow:hidden" id="drop">
+      <div style="font-size:10px;opacity:.5">Drop schickes Bild hier → MATT ne Echo — reback</div>
+    </div>
+    <button class="btn sec" style="width:100%;margin-top:8px" onclick="download()">⬇ Download MATT reback — index.html für MATT Repo</button>
+  </div>
+</div>
+
+<script>
+let sec=15;
+const secEl=document.getElementById('sec');
+const bar=document.getElementById('bar');
+const count=document.getElementById('count');
+setInterval(()=>{
+  sec-=0.1;
+  if(sec<=0){ window.location.href="https://iki1uc.github.io/atom.PC/"; }
+  secEl.textContent=sec.toFixed(1);
+  count.textContent=`${sec.toFixed(1)}s → atom.PC reback`;
+  bar.style.width=((15-sec)/15*100)+'%';
+},100);
+
+function go(url){ window.location.href=url; }
+
+let imgs=[]; let cur=0;
+const matt=document.getElementById('matt');
+function addImgs(files){
+  Array.from(files).forEach(f=>{
+    if(!f.type.startsWith('image/')) return;
+    const r=new FileReader();
+    r.onload=e=>{
+      const img=document.createElement('img');
+      img.src=e.target.result;
+      matt.appendChild(img);
+      imgs.push(img);
+      if(imgs.length===1) img.classList.add('active');
+    };
+    r.readAsDataURL(f);
+  });
+}
+setInterval(()=>{
+  if(imgs.length<2) return;
+  imgs[cur].classList.remove('active');
+  cur=(cur+1)%imgs.length;
+  imgs[cur].classList.add('active');
+}, 3000);
+
+const drop=document.getElementById('drop');
+drop.addEventListener('dragover', e=>{e.preventDefault(); drop.style.borderColor='#ffcc00';});
+drop.addEventListener('drop', e=>{e.preventDefault(); addImgs(e.dataTransfer.files);});
+
+function download(){
+  const blob=new Blob([document.documentElement.outerHTML],{type:'text/html'});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement('a'); a.href=url; a.download='index.html'; a.click();
+}
+
+// Demo images
+setTimeout(()=>{
+  const demos=["MATT ne Echo","reback atom.PC","ozean Wasser Ozean","OP Vulkan-Drache"];
+  demos.forEach((name,i)=>{
+    const c=document.createElement('canvas'); c.width=800; c.height=400;
+    const ctx=c.getContext('2d');
+    ctx.fillStyle=`hsl(${40+i*30},80%,10%)`; ctx.fillRect(0,0,800,400);
+    ctx.fillStyle='#fff'; ctx.font='bold 24px monospace'; ctx.fillText(name, 20, 200);
+    const img=document.createElement('img'); img.src=c.toDataURL(); matt.appendChild(img); imgs.push(img);
+    if(i===0) img.classList.add('active');
+  });
+},300);
+</script>
+</body>
+</html>
